@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"href="css/cadastro2.css"  >
+
+    <link rel="stylesheet"href="css/footer.css"  >
+    <link rel="stylesheet"href="css/index.css"  >
+    <link rel="stylesheet"href="css/navbar.css"  >
+    <link rel="stylesheet"href="css/carousel.css"  >
+        <link rel="stylesheet"href="css/formulario.css"  >
+
+
+    <title>Home</title>
+ 
+  
+  </head>
+<body style="background-color: rgb(56, 56, 56) ;">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    *{
+      font-family: 'Rubik Distressed', cursive;
+    }
+    </style>
+    <div class="front">
+     
+      <nav>
+        <div class="logo">
+          <li class="img b"><a href="index2.html"><img src="img/roda.gif"
+            alt="" width="35px"height="35px" >  </a></li>
+            <li class="tuning a"><a href="index2.html"> Tunning</a></li>
+        </div>
+          <ul>
+              
+              <li class="center a" ><a href="">Drift</a>
+              <ul>
+                  <li class="a"><a href="vibrabequim2.html">Virabrequim</a></li>
+                  <li class="a"><a href="suspensao_drift2.html">Suspensão</a></li>
+                  <li class="a"><a href="pneus_drift2.html">Pneus</a></li>
+                  <li class="a"><a href="turbo_drift2.html">Turbo</a></li>
+                  <li class="a"><a href="freiodemao2.html">Freio de mão</a></li>
+              </ul>
+              </li>
+              <li class="secondd a"><a href="">Arrancada</a>
+                  <ul>
+                      <li class="a"><a href="turbo_arrancada2.html">Turbo</a></li>
+                      <li class="a"><a href="nitro2.html">Nitro</a></li>
+                      <li class="a"><a href="freio_arrancada2.html">Freio</a></li>
+                      <li class="a"><a href="charger2.html">Charger</a></li>
+                      <li class="a"><a href="pneus_arrancada2.html">Pneus</a></li>   
+                      <li class="a"><a href="blower2.html">Blower</a></li>   
+                  </ul>
+                  </li>
+                  <li class="a"><a href="">Rally</a>
+                      <ul>
+                          <li class="a"><a href="freio_rally2.html">Freio</a></li>
+                          <li class="a"><a href="pneus_rally2.html">Pneus</a></li>
+                          <li class="a"><a href="suspensao_rally2.html">Suspensão</a></li>                                   
+                      </ul>
+                      </li>
+                      <li class="secondd a"><a href="montarCarro2.html">Montar carro</a> </li>
+                        <li class="secondd a"><a href="escolherEndereco.html">Escolher endereço</a> </li>
+                        
+              
+                      
+                  
+              </ul>
+              <button class="sair"onclick="signOut()" id="signOut">Sair</button>
+              <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                
+              </div>
+              </nav>
+              <div class="mobile-menu">
+                
+                <ul>
+                  
+                  <li class="first a" ><a href="">Drift</a>
+                  <ul>
+                      <li class="a"><a href="vibrabequim2.html">Virabrequim</a></li>
+                      <li class="a"><a href="suspensao_drift2.html">Suspensão</a></li>
+                      <li class="a"><a href="pneus_drift2.html">Pneus</a></li>
+                      <li class="a"><a href="turbo_drift2.html">Turbo</a></li>
+                      <li class="a"><a href="freiodemao2.html">Freio de mão</a></li>
+                  </ul>
+                  </li>
+                  <li class="second a"><a href="">Arrancada</a>
+                      <ul>
+                          <li class="a"><a href="turbo_arrancada2.html">Turbo</a></li>
+                          <li class="a"><a href="nitro2.html">Nitro</a></li>
+                          <li class="a"><a href="freio_arrancada2.html">Freio</a></li>
+                          <li class="a"><a href="charger2.html">Charger</a></li>
+                          <li class="a"><a href="pneus_arrancada2.html">Pneus</a></li>
+                          <li class="a"><a href="blower2.html">Blower</a></li>   
+     
+                      </ul>
+                      </li>
+                      <li class="third a"><a href="">Rally</a>
+                          <ul>
+                              <li class="a"><a href="freio_rally2.html">Freio</a></li>
+                              <li class="a"><a href="pneus_rally2.html">Pneus</a></li>
+                              <li class="a"><a href="suspensao_rally2.html">Suspensão</a></li>                                   
+                          </ul>
+                          </li>
+                          <li class="secondd a"><a href="montarCarro2.html">Montar carro</a>
+                              
+                  </ul>
+                 
+              </div>
+           </div>
+
+<br><br><br>
+           <main class="container">
+            <h1 class="title">Escolha o endereço de entrega</h1>
+            
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="cep"  required>
+                    <label for="cep">CEP</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="endereco"  required>
+                    <label for="endereco">Endereço</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="numero"  required>
+                    <label for="numero">Número</label>
+                </div>
+         
+            
+                <div class="inputbox">
+                    <input type="text" id="bairro"  required>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="cidade"  required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="estado"  required>
+                    <label for="estado">Estado</label>
+                </div>
+               
+                   
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <center>
+                <button onclick="apagarTexto()" id="btn">Enviar</button>
+                </center>
+            </div>
+        </form>
+        </main>
+<br><br><br>
+
+        <footer>
+          <div class="container-footer">
+              <div class="row-footer">
+                <div class="footer-col">
+                  <img src="img/logopng.png" class="logo" alt=""height="120px" width="350px">
+
+                  <div class="medias-socias">
+                    <a href="https://api.whatsapp.com/send?phone=5519999087842"><img src="img/whatsapp.png" alt=""
+                      width="40px" height="40px"></a>
+                    <a href="https://www.instagram.com/otuningoficial/"><img src="img/instagram.png" alt=""
+                      width="40px" height="40px"></a>
+                    <a href="https://www.facebook.com/people/Otuning/100087628377630/"><img src="img/facebookpng.png" alt="" height="40pxwidth="40px></a>
+                   
+                     
+                </div>
+                      
+                  </div>
+
+                  <div class="footer-col">
+                      <h4>DRIFT</h4>
+                      <ul>
+                        <li><a href="vibrabequim.html" class="footer-link">vibrabequim</a></li>
+                        <li><a href="suspensao_drift.html" class="footer-link">suspensão</a></li>
+                        <li><a href="pneus_drift.html" class="footer-link">pneus</a></li>
+                        <li><a href="turbo_drift.html" class="footer-link">turbo</a></li>
+                        <li><a href="freiodemao.html" class="footer-link">freio de mão</a></li>  
+                      </ul>
+                  </div>
+                  
+                  <div class="footer-col">
+                      <h4>ARRANCADA</h4>
+                      <ul>
+                        <li><a href="turbo_arrancada.html" class="footer-link">turbo</a></li>
+                        <li><a href="nitro.html" class="footer-link">nitro</a></li>
+                        <li><a href="freio_arrancada.html" class="footer-link">freio</a></li>
+                        <li><a href="charger.html" class="footer-link">charger</a></li>
+                        <li><a href="pneus_arrancada.html" class="footer-link">pneus</a></li>
+                        <li><a href="blower.html" class="footer-link">blower</a></li>
+                      </ul>
+                  </div>
+                 
+                  <div class="footer-col">
+                      <h4>RALLY</h4>
+                      <ul>
+                        <li><a href="freio_rally.html" class="footer-link">freio</a></li>
+                        <li><a href="pneus_rally.html" class="footer-link">pneus</a></li>
+                        <li><a href="suspensao_rally.html" class="footer-link">suspensão</a></li>
+                      </ul>
+                  </div>
+                 
+              </div>
+          </div>
+      </footer>
+      
+      </center>
+ 
+        <script src="js/index.js"></script>
+        <script src="js/formulario.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+        <script src="js/login2.js"></script>   
+</body>
+
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carros de Drift</title>
+  <link rel="stylesheet" href="css/cadastro2.css">
+  <link rel="stylesheet" href="css/montarCarro.css">
+  <link rel="stylesheet"href="css/footer.css"  >
+  <link rel="stylesheet"href="css/index.css"  >
+  <link rel="stylesheet"href="css/navbar.css"  >
+  
+</head>
+<body>
+  <!-- <div class="wrapper">
+
+    <div class="shoppingCart">
+      <div class="shoppingIcon">
+          <span class="itemNumber">0</span>
+      </div>
+      <div class="shoppingMenu">
+          <p class="shoppingTitle">Your Shopping Cart</p>
+          <div class="productResume">
+              <article>
+                  <p class="shoppingQuantity">0</p>
+                  <p class="shoppingTotal"></p>
+              </article>
+          </div>
+          <div class="shoppingBtn">
+              <a class="link emptyCart"> Empty Shopping Cart</a>
+              <button class="btn">Finish Shopping</button>
+          </div>
+
+      </div>
+  </div>
+
+  </div> -->
+  
+
+
+  <div class="front">
+    <nav>
+      <div class="logo">
+        <li class="img b"><a href="index2.html"><img src="img/roda.gif"
+          alt="" width="35px"height="35px" >  </a></li>
+          <li class="tuning a"><a href="index2.html"> Tunning</a></li>
+      </div>
+        <ul>
+            
+            <li class="center a" ><a href="">Drift</a>
+            <ul>
+                <li class="a"><a href="vibrabequim2.html">Virabrequim</a></li>
+                <li class="a"><a href="suspensao_drift2.html">Suspensão</a></li>
+                <li class="a"><a href="pneus_drift2.html">Pneus</a></li>
+                <li class="a"><a href="turbo_drift2.html">Turbo</a></li>
+                <li class="a"><a href="freiodemao2.html">Freio de mão</a></li>
+            </ul>
+            </li>
+            <li class="secondd a"><a href="">Arrancada</a>
+                <ul>
+                    <li class="a"><a href="turbo_arrancada2.html">Turbo</a></li>
+                    <li class="a"><a href="nitro2.html">Nitro</a></li>
+                    <li class="a"><a href="freio_arrancada2.html">Freio</a></li>
+                    <li class="a"><a href="charger2.html">Charger</a></li>
+                    <li class="a"><a href="pneus_arrancada2.html">Pneus</a></li>   
+                    <li class="a"><a href="blower2.html">Blower</a></li>   
+                </ul>
+                </li>
+                <li class="a"><a href="">Rally</a>
+                    <ul>
+                        <li class="a"><a href="freio_rally2.html">Freio</a></li>
+                        <li class="a"><a href="pneus_rally2.html">Pneus</a></li>
+                        <li class="a"><a href="suspensao_rally2.html">Suspensão</a></li>                                   
+                    </ul>
+                    </li>
+                    <li class="secondd a"><a href="montarCarro2.html">Montar carro</a> </li>
+                    <li class="secondd a"><a href="escolherEndereco.html">Escolher endereço</a> </li>
+                    
+                
+            </ul>
+            <button class="c"onclick="signOut()" id="signOut">Sair</button>
+            <div class="mobile-menu-icon">
+              <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+              
+            </div>
+            </nav>
+            <div class="mobile-menu">
+              
+              <ul>
+                
+                <li class="first a" ><a href="">Drift</a>
+                <ul>
+                    <li class="a"><a href="vibrabequim2.html">Virabrequim</a></li>
+                    <li class="a"><a href="suspensao_drift2.html">Suspensão</a></li>
+                    <li class="a"><a href="pneus_drift2.html">Pneus</a></li>
+                    <li class="a"><a href="turbo_drift2.html">Turbo</a></li>
+                    <li class="a"><a href="freiodemao2.html">Freio de mão</a></li>
+                </ul>
+                </li>
+                <li class="second a"><a href="">Arrancada</a>
+                    <ul>
+                        <li class="a"><a href="turbo_arrancada2.html">Turbo</a></li>
+                        <li class="a"><a href="nitro2.html">Nitro</a></li>
+                        <li class="a"><a href="freio_arrancada2.html">Freio</a></li>
+                        <li class="a"><a href="charger2.html">Charger</a></li>
+                        <li class="a"><a href="pneus_arrancada2.html">Pneus</a></li>
+                        <li class="a"><a href="blower2.html">Blower</a></li>   
+   
+                    </ul>
+                    </li>
+                    <li class="third a"><a href="">Rally</a>
+                        <ul>
+                            <li class="a"><a href="freio_rally2.html">Freio</a></li>
+                            <li class="a"><a href="pneus_rally2.html">Pneus</a></li>
+                            <li class="a"><a href="suspensao_rally2.html">Suspensão</a></li>                                   
+                        </ul>
+                        </li>
+                        <li class="secondd a"><a href="montarCarro2.html">Montar carro</a>
+                            
+                </ul>
+               
+            </div>
+         </div>
+
+
+    
+<br>
+
+<div class="responsive">
+  <div class="container">
+    <h1 class="tituloCont">Montar Carro</h1>
+
+    <br>
+    
+
+    <div class="opcoes">
+       <img id="figura" class="carro"  src="img/Carro.png" width="706px" height="500px">
+       <img id="roda"  class="roda" src="img/roda1.png" width="110px" height="120 px" alt="">
+       <img id="roda2" class="roda2" src="img/roda2.png" width="86px" height="105 px" alt="">
+
+      
+    <section class="dropDowns"><details>
+      
+      <Summary class="itens">Cores Exteriores</Summary>
+      <button id="btnVermelho"  class="btn1" onclick="trocar()"></button>
+      <button id="btbnPreto"    class="btn2" onclick="trocar2()"></button>
+      <button id="btnAzul"      class="btn3" onclick="trocar3()"></button>
+      <button id="btnRoxo"      class="btn4" onclick="trocar4()"></button>
+      <button id="btnVerde"     class="btn5" onclick="trocar5()"></button>
+    </details>
+
+
+    <details><Summary class="itens">Rodas</Summary>
+
+    <button id="btnRoda1" class="btnRodaDrift" onclick="trocarRoda1()"><img src="img/rodaDrift.png" height="55px" alt="b"></button>
+    <button id="btnRoda2" class="btnRodaDrift" ><img src="img/faltaEstoque.png" height="55px" alt="b"></button>
+    <button id="btnRoda3" class="btnRodaDrift" onclick="trocarRoda3()" ><img src="img/rodaDrift3.png" height="55px" alt="b"></button>
+
+    </details>
+
+
+    <details><Summary class="itens">Motores</Summary>
+   
+     <button class="motor" id="txtCilin4" for="cilindro4">Motor 4 cilindros</button>
+
+     <button class="motor" id="txtCilin6" for="motor">Motor 6 cilindros</button>  
+
+    </details>
+
+
+    <details><Summary class="itens">Pneus</Summary>
+   
+      <button id="pneu1" class="btnPneu"><img src="img/pneu1.png" height="55px" alt="b">Zeknova SuperSport RS</button>
+      <button id="pneu2" class="btnPneu"><img src="img/pneu2.png" height="55px" alt="b">Zeknova RS606 R1</button>
+      <button id="pneu3" class="btnPneu"><img src="img/pneu3.png" height="55px" alt="b">Pneu Itaro Aro 18 IT101</button>
+      <br><br><br>
+
+
+ 
+    </details>
+
+
+    <details><Summary class="itens">Volantes</Summary>
+   
+      <button id="volante1" class="btnVolanteeFreio"><img src="img/volante1.png" height="55px" alt="b">VOLANTE ESPORTIVO</button>
+      <button id="volante2" class="btnVolanteeFreio"><img src="img/volante2.png" height="55px" alt="b">VOLANTE FTR ALIVIADO</button>
+      <button id="volante3" class="btnVolanteeFreio"><img src="img/volante3.png" height="55px" alt="b">VOLANTE TS 400</button> <br> <br>
+
+
+    </details>
+
+    <details><Summary class="itens">Freios</Summary>
+   
+      <button id="freio1" class="btnVolanteeFreio"><img src="img/freio1.png" height="55px" alt="b">Kit Freios Traseiros Wilwood 2002 - 2012</button>
+      <button id="freio2" class="btnVolanteeFreio"><img src="img/freio2.png" height="55px" alt="b">Kit Freios Dianteiros Wilwood 2006 - 2012</button>
+      <button id="freio3" class="btnVolanteeFreio"><img src="img/freio3.png" height="55px" alt="b">Kit Freios Dianteiros Wilwood 2005 - 2014</button>
+      <br><br><br>
+    </details>
+
+
+    <details><Summary class="itens">Suspensão</Summary>
+   
+   
+      <button id="suspensao1" class="btnSuspensao"><img src="img/Suspensao1.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Volkswagen Golf Mk7 Tsi</button>
+      <button id="suspensao2" class="btnSuspensao"><img src="img/Suspensao2.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Bmw E36 6 Cil.</button>
+      <button id="suspensao3" class="btnSuspensao"><img src="img/Suspensao3.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Bmw Série 1 F20 4/6 Cil</button> <br><br><br>
+
+    </details>
+
+    <details><Summary class="itens">Freio de mão Hidraulico</Summary>
+
+      <button id="freioHid1" class="btnFreioHid"><img src="img/freioHidraulico1.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Com Regulagem Epman - Vermelho</button>
+      <button id="freioHid2" class="btnFreioHid"><img src="img/freioHidraulico2.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Universal Modelo Longo Epman</button>
+      <button id="freioHid3" class="btnFreioHid"><img src="img/freioHidraulico3.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Epman - Preto
+      </button> <br><br><br>
+
+    </details>
+
+    <!-- INICIO SUMMARY -->
+    <details><Summary class="itens">Virabrequim</Summary>
+   
+ 
+      <button id="virabrequim1" class="btnVirabrequim"><img src="img/virabrequim1.png" height="50px" width="50px" alt="b">Virabrequim Forjado Billet Vw Ea111 1.6 Curso 94,5mm - Imp</button>
+      <button id="virabrequim2" class="btnVirabrequim"><img src="img/virabrequim2.png" height="50px" width="70px"  alt="b">Virabrequim Forjado SUSIN MOTOR JCB 444 3C/4CX/VM115</button>
+      <button id="virabrequim3" class="btnVirabrequim"><img src="img/virabrequim3.png" height="50px" width="70px"  alt="b">Virabrequim L200 OUTDOOR 2.5 TD NOVO AÇO FORJADO
+      </button> <br><br>
+    </details>
+   <!--FIM SUMMARY  -->
+   <div class="btnContainer">
+    <button onclick="showModal()" class="btnAdd">
+        <img src="https://rafaelalucas.com/dailyui/12/assets/shopping-cart-w.svg" alt="">
+        Confirmar Compra</button>
+  </div>
+    </section>
+   
+
+  
+
+    
+      <div id="modalShopping" class="shoppingMenu">
+        <div class="sexo">
+          <p class="shoppingTitle">Seu carrinho de Compras</p>
+          
+          <span class="close-button2" onclick="fecharCarrinho()" ><img src="_img/fechar.png" width="24px" height="20px" alt="">
+          </div>
+
+          
+          <div class="productResume">
+            <img id="figura" class="imgCarrinho"  src="_img/Carro.png" height="90px">
+              <article>
+                  <p class="shoppingProduct">350z</p>
+              </article>
+            
+            </div>
+            <div class="shoppingBtn">
+              <a class="link emptyCart"> <img src="https://rafaelalucas.com/dailyui/12/assets/trash.svg" alt="">Esvaziar</a>
+              <button class="btn">Finish Shopping</button>
+          </div>
+      </div>
+
+
+  </div>
+
+  <!-- <div class="shoppingCart">
+   
+    <div class="shoppingMenu">
+        <p class="shoppingTitle"></p>
+        <div class="productResume">
+            <article>
+                <p class="shoppingProduct"></p>
+                <p class="shoppingQuantity">0</p>
+                <p class="shoppingTotal"></p>
+            </article>
+        </div>
+        <div class="shoppingBtn">
+            <button class="btn">Finish Shopping</button>
+        </div>
+
+    </div>
+</div> -->
+
+
+
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">
+            &times;
+            
+        </span>
+  
+        <h4 class="corzinha">       Cor:  </h4>
+        <h4 class="modeloRoda">     Roda: </h4>
+        <h4 id="motoresTxt" class="motores">        Motor:</h4>
+        <h4 class="pneus">          Pneu: </h4>
+        <h4 class="volantes">       Volante: </h4>
+        <h4 class="freios">         Freio: </h4>
+        <h4 class="suspensao">      Suspensão: </h4>
+        <h4 class="freioHidraulico">Freio de mão Hidráulico:</h4>
+        <h4 class="virabrequim">    Virabrequim: </h4>
+        <br><br>
+      
+        <button onclick="mostrarPreco()"  class="addCarrinho">Ver preço final</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="hidden">
+  <div>
+  <div class="container">
+    <h1 class="tituloCont">Montar Carro</h1>
+
+    <br>
+    
+
+    <div class="opcoes">
+       <img id="figura" class="carro"  src="img/Carro.png" width="706px" height="500px">
+       <img id="roda"  class="roda" src="img/roda1.png" width="110px" height="120 px" alt="">
+       <img id="roda2" class="roda2" src="img/roda2.png" width="86px" height="105 px" alt="">
+      </div>
+     
+      <center>
+    <section class="dropDowns"><details>
+      
+      <Summary class="itens">Cores Exteriores</Summary>
+      <button id="btnVermelho"  class="btn1" onclick="trocar()"></button>
+      <button id="btbnPreto"    class="btn2" onclick="trocar2()"></button>
+      <button id="btnAzul"      class="btn3" onclick="trocar3()"></button>
+      <button id="btnRoxo"      class="btn4" onclick="trocar4()"></button>
+      <button id="btnVerde"     class="btn5" onclick="trocar5()"></button>
+    </details>
+
+
+    <details><Summary class="itens">Rodas</Summary>
+
+    <button id="btnRoda1" class="btnRodaDrift" onclick="trocarRoda1()"><img src="img/rodaDrift.png" height="55px" alt="b"></button>
+    <button id="btnRoda2" class="btnRodaDrift" ><img src="img/faltaEstoque.png" height="55px" alt="b"></button>
+    <button id="btnRoda3" class="btnRodaDrift" onclick="trocarRoda3()" ><img src="img/rodaDrift3.png" height="55px" alt="b"></button>
+
+    </details>
+
+
+    <details><Summary class="itens">Motores</Summary>
+   
+     <button class="motor" id="txtCilin4" for="cilindro4">Motor 4 cilindros</button>
+
+     <button class="motor" id="txtCilin6" for="motor">Motor 6 cilindros</button>  
+
+    </details>
+
+
+    <details><Summary class="itens">Pneus</Summary>
+   
+      <button id="pneu1" class="btnPneu"><img src="img/pneu1.png" height="55px" alt="b">Zeknova SuperSport RS</button>
+      <button id="pneu2" class="btnPneu"><img src="img/pneu2.png" height="55px" alt="b">Zeknova RS606 R1</button>
+      <button id="pneu3" class="btnPneu"><img src="img/pneu3.png" height="55px" alt="b">Pneu Itaro Aro 18 IT101</button>
+      <br><br><br>
+
+
+ 
+    </details>
+
+
+    <details><Summary class="itens">Volantes</Summary>
+   
+      <button id="volante1" class="btnVolanteeFreio"><img src="img/volante1.png" height="55px" alt="b">VOLANTE ESPORTIVO</button>
+      <button id="volante2" class="btnVolanteeFreio"><img src="img/volante2.png" height="55px" alt="b">VOLANTE FTR ALIVIADO</button>
+      <button id="volante3" class="btnVolanteeFreio"><img src="img/volante3.png" height="55px" alt="b">VOLANTE TS 400</button> <br> <br>
+
+
+    </details>
+
+    <details><Summary class="itens">Freios</Summary>
+   
+      <button id="freio1" class="btnVolanteeFreio"><img src="img/freio1.png" height="55px" alt="b">Kit Freios Traseiros Wilwood 2002 - 2012</button>
+      <button id="freio2" class="btnVolanteeFreio"><img src="img/freio2.png" height="55px" alt="b">Kit Freios Dianteiros Wilwood 2006 - 2012</button>
+      <button id="freio3" class="btnVolanteeFreio"><img src="img/freio3.png" height="55px" alt="b">Kit Freios Dianteiros Wilwood 2005 - 2014</button>
+      <br><br><br>
+    </details>
+
+
+    <details><Summary class="itens">Suspensão</Summary>
+   
+   
+      <button id="suspensao1" class="btnSuspensao"><img src="img/Suspensao1.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Volkswagen Golf Mk7 Tsi</button>
+      <button id="suspensao2" class="btnSuspensao"><img src="img/Suspensao2.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Bmw E36 6 Cil.</button>
+      <button id="suspensao3" class="btnSuspensao"><img src="img/Suspensao3.png" height="55px" alt="b">Suspensão Coilover D2 Racing Street Bmw Série 1 F20 4/6 Cil</button> <br><br><br>
+
+    </details>
+
+    <details><Summary class="itens">Freio de mão Hidraulico</Summary>
+
+      <button id="freioHid1" class="btnFreioHid"><img src="img/freioHidraulico1.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Com Regulagem Epman - Vermelho</button>
+      <button id="freioHid2" class="btnFreioHid"><img src="img/freioHidraulico2.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Universal Modelo Longo Epman</button>
+      <button id="freioHid3" class="btnFreioHid"><img src="img/freioHidraulico3.png" height="55px" alt="b">Alavanca Freio De Mão Hidráulico Epman - Preto
+      </button> <br><br><br>
+
+    </details>
+
+    <!-- INICIO SUMMARY -->
+    <details><Summary class="itens">Virabrequim</Summary>
+   
+ 
+      <button id="virabrequim1" class="btnVirabrequim"><img src="img/virabrequim1.png" height="50px" width="50px" alt="b">Virabrequim Forjado Billet Vw Ea111 1.6 Curso 94,5mm - Imp</button>
+      <button id="virabrequim2" class="btnVirabrequim"><img src="img/virabrequim2.png" height="50px" width="70px"  alt="b">Virabrequim Forjado SUSIN MOTOR JCB 444 3C/4CX/VM115</button>
+      <button id="virabrequim3" class="btnVirabrequim"><img src="img/virabrequim3.png" height="50px" width="70px"  alt="b">Virabrequim L200 OUTDOOR 2.5 TD NOVO AÇO FORJADO
+      </button> <br><br>
+    </details>
+   <!--FIM SUMMARY  -->
+   <div class="btnContainer">
+    <button onclick="showModal()" class="btnAdd">
+        <img src="https://rafaelalucas.com/dailyui/12/assets/shopping-cart-w.svg" alt="">
+        Confirmar Compra</button>
+  </div>
+    </section>
+   
+
+  
+
+    
+      <div id="modalShopping" class="shoppingMenu">
+        <div class="sexo">
+          <p class="shoppingTitle">Seu carrinho de Compras</p>
+          
+          <span class="close-button2" onclick="fecharCarrinho()" ><img src="_img/fechar.png" width="24px" height="20px" alt="">
+          </div>
+
+          
+          <div class="productResume">
+            <img id="figura" class="imgCarrinho"  src="_img/Carro.png" height="90px">
+              <article>
+                  <p class="shoppingProduct">350z</p>
+              </article>
+            
+            </div>
+            <div class="shoppingBtn">
+              <a class="link emptyCart"> <img src="https://rafaelalucas.com/dailyui/12/assets/trash.svg" alt="">Esvaziar</a>
+              <button class="btn">Finish Shopping</button>
+          </div>
+      </div>
+
+
+  </div>
+
+  <!-- <div class="shoppingCart">
+   
+    <div class="shoppingMenu">
+        <p class="shoppingTitle"></p>
+        <div class="productResume">
+            <article>
+                <p class="shoppingProduct"></p>
+                <p class="shoppingQuantity">0</p>
+                <p class="shoppingTotal"></p>
+            </article>
+        </div>
+        <div class="shoppingBtn">
+            <button class="btn">Finish Shopping</button>
+        </div>
+
+    </div>
+</div> -->
+
+
+
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">
+            &times;
+            
+        </span>
+  
+        <h4 class="corzinha">       Cor:  </h4>
+        <h4 class="modeloRoda">     Roda: </h4>
+        <h4 id="motoresTxt" class="motores">        Motor:</h4>
+        <h4 class="pneus">          Pneu: </h4>
+        <h4 class="volantes">       Volante: </h4>
+        <h4 class="freios">         Freio: </h4>
+        <h4 class="suspensao">      Suspensão: </h4>
+        <h4 class="freioHidraulico">Freio de mão Hidráulico:</h4>
+        <h4 class="virabrequim">    Virabrequim: </h4>
+        <br><br>
+      
+        <button onclick="aparecerCarrinho()"  class="addCarrinho">Adicionar ao carrinho</button>
+
+    </div>
+  </div>
+
+</div>
+
+  <footer>
+    <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <img src="img/logopng.png" class="logo" alt=""height="120px" width="350px">
+
+            <div class="medias-socias">
+              <a href="https://api.whatsapp.com/send?phone=5519999087842"><img src="img/whatsapp.png" alt=""
+                width="40px" height="40px"></a>
+              <a href="https://www.instagram.com/otuningoficial/"><img src="img/instagram.png" alt=""
+                width="40px" height="40px"></a>
+              <a href="https://www.facebook.com/people/Otuning/100087628377630/"><img src="img/facebookpng.png" alt="" height="40pxwidth="40px></a>
+             
+               
+          </div>
+                
+            </div>
+
+            <div class="footer-col">
+                <h4>DRIFT</h4>
+                <ul>
+                  <li><a href="vibrabequim2.html" class="footer-link">vibrabequim</a></li>
+                  <li><a href="suspensao_drift2.html" class="footer-link">suspensão</a></li>
+                  <li><a href="pneus_drift2.html" class="footer-link">pneus</a></li>
+                  <li><a href="turbo_drift2.html" class="footer-link">turbo</a></li>
+                  <li><a href="freiodemao2.html" class="footer-link">freio de mão</a></li>  
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>ARRANCADA</h4>
+                <ul>
+                  <li><a href="turbo_arrancada2.html" class="footer-link">turbo</a></li>
+                  <li><a href="nitro2.html" class="footer-link">nitro</a></li>
+                  <li><a href="freio_arrancada2.html" class="footer-link">freio</a></li>
+                  <li><a href="charger2.html" class="footer-link">charger</a></li>
+                  <li><a href="pneus_arrancada2.html" class="footer-link">pneus</a></li>
+                  <li><a href="blower2.html" class="footer-link">blower</a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-col">
+                <h4>RALLY</h4>
+                <ul>
+                  <li><a href="freio_rally2.html" class="footer-link">freio</a></li>
+                  <li><a href="pneus_rally2.html" class="footer-link">pneus</a></li>
+                  <li><a href="suspensao_rally2.html" class="footer-link">suspensão</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="js/trocarImagem.js"></script>
+<script src="js/calcPreco.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="js/login2.js"></script>
+       <script src="js/index.js"></script>
+</html>

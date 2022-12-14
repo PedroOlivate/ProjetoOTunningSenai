@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&family=Oleo+Script+Swash+Caps&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 100%;
+    
+background-size: 100%;
+
+    overflow: hidden;
+}
+
+
+
