@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');  
 
 
 *{
@@ -101,4 +102,15 @@ footer{
 
 .btnContainer{
     margin-bottom: 200px;
+}
+.sobre{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(9, 12, 14);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+}
+
+.logofooter{
+    margin-left: 45px;
 }
